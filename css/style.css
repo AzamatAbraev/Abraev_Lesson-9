@@ -460,7 +460,7 @@ nav {
 .portfolio-bottom {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 70px;
+  padding-bottom: 50px;
 }
 
 .portfolio-cart h3 {
@@ -494,8 +494,9 @@ nav {
 }
 
 .main-img {
-  width: 100%;
+  max-width: 515px;
   object-fit: cover;
+  object-position: center;
   margin-top: 20px;
 }
 
@@ -508,6 +509,12 @@ nav {
   .portfolio-bottom {
     display: flex;
     flex-direction: column;
+  }
+}
+
+@media (max-width: 560px) {
+  .main-img {
+    width: 100%;
   }
 }
 
